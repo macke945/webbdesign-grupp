@@ -81,7 +81,6 @@ button:hover{
 @media only screen and (max-width: 56rem) {
     .hero-info{
         font-size: 150%; 
-        color: red;
     } 
 }
 
