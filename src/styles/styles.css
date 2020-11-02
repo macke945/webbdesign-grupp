@@ -120,17 +120,16 @@ button {
   background-color: #90ee90;
   border-radius: 1rem 1rem 0 0;
   width: 20rem;
-  margin: 2rem;
+  margin: auto;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1300px) {
   .cards {
     display: inline;
   }
 
   .options-card {
     width: 80%;
-    margin: auto;
   }
 }
 
