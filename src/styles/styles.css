@@ -111,6 +111,12 @@ button {
   margin: 2rem auto;
   text-align: center;
 }
+
+@media only screen and (max-width: 48rem) {
+  .food-details-card {
+    width: 98%;
+  }
+}
 .food-details-card h1 {
   position: absolute;
   font-size: 2rem;
