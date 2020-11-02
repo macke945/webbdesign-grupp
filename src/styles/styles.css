@@ -1,102 +1,141 @@
 /* global style */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "PT Serif", "Mulish", "Helvetica",sans-serif;
+  font-family: "PT Serif", "Mulish", "Helvetica", sans-serif;
 }
 
 button {
-    border-radius: 25rem;
-    color: #000000;
-    padding: .4rem;
-    background-color: #ffffff;
-    border-style: none;
-    border: 1px solid #ffffff;
-    width: 6rem;
-    cursor: pointer;
+  border-radius: 25rem;
+  color: #000000;
+  padding: 0.4rem;
+  background-color: #ffffff;
+  border-style: none;
+  border: 1px solid #ffffff;
+  width: 6rem;
+  cursor: pointer;
 }
 
 /* NavBar */
 
-.navbar{
-    padding: .9rem;
-    background-color: #002600;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navbar {
+  padding: 0.9rem;
+  background-color: #002600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.navbar img{
-    width: 4rem;
-    height:4rem;
+.navbar img {
+  width: 4rem;
+  height: 4rem;
 }
 .navbar ul li {
-    color: #ffffff;
-    text-transform:uppercase;
-    list-style-type: none;
-    cursor: pointer;
+  color: #ffffff;
+  text-transform: uppercase;
+  list-style-type: none;
+  cursor: pointer;
 }
 /* Hero */
 .hero {
-    position: relative;
+  position: relative;
 }
 .hero img {
-    opacity: 0.8;
-    height: 85vh;
-    width: 100%;
+  opacity: 0.8;
+  height: 85vh;
+  width: 100%;
 }
-.hero-info{
-    position: absolute;
-    line-height: 2.5rem;
-    color: #ffffff;
-    top: .9rem;
-    left: .9rem;
-    font-size: 1.5rem; 
-    font-weight: bold;
-    margin: .3rem;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    -webkit-text-stroke: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-@media only screen and (max-width: 48rem){
-    .hero-info {
-        font-size:1rem;
-    } 
+.hero-info {
+  position: absolute;
+  line-height: 2.5rem;
+  color: #ffffff;
+  top: 0.9rem;
+  left: 0.9rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.3rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  -webkit-text-stroke: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.button-hero{
-    position: absolute;
-    bottom: 2rem;
-    transform: translateX(50vw);
+@media only screen and (max-width: 48rem) {
+  .hero-info {
+    font-size: 1rem;
+  }
+}
+
+.button-hero {
+  position: absolute;
+  bottom: 2rem;
+  transform: translateX(50vw);
 }
 
 /* Footer */
 
 .footer {
-    padding: .9rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #002600;
-    color: #ffffff;
+  padding: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #002600;
+  color: #ffffff;
 }
 .footer .footer-title {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-.footer .footer-copyright{
-    margin: .4rem;
-    display: block;
-    word-wrap: break-word;
+.footer .footer-copyright {
+  margin: 0.4rem;
+  display: block;
+  word-wrap: break-word;
 }
 
 .footer-icons img {
-    margin: 0.2rem;
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
+  margin: 0.2rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+/* food details */
+
+.food-details-card {
+  position: relative;
+  width: 80%;
+  background-color: #dcdcdc;
+  border: 0.001rem solid #002600;
+  margin: 2rem auto;
+  text-align: center;
+}
+.food-details-card h1 {
+  position: absolute;
+  font-size: 2rem;
+  color: #002600;
+  top: 1rem;
+  left: 1rem;
+}
+.food-details-card-image {
+  width: 100%;
+  opacity: 0.8;
+  height: 20rem;
+  object-fit: cover;
+  overflow: hidden;
+}
+.food-details-card-info {
+  background-color: #dcdcdc;
+  padding: 1rem;
+  width: 100%;
+
+  font-weight: bold;
+}
+.food-details-card-info-text {
+  text-align: center;
+}
+.food-details-button {
+  margin-top: 1rem;
+  border: 1px solid #002600;
 }
