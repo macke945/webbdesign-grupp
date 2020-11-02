@@ -100,3 +100,47 @@ button {
     height: 2rem;
     cursor: pointer;
 }
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8.2rem;
+}
+
+.cards img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45%;
+    border-radius: 1rem 1rem 0 0;
+}
+.vegetarian-card {
+    background-color: #90ee90;
+    border-radius: 1rem 1rem;
+    width: 23rem;
+    height: 30rem;
+    margin: 2rem;
+}
+
+.mix-card {
+    background-color: #90ee90;
+    border-radius: 1rem;
+    width: 23rem;
+    height: 30rem;
+    margin: 2rem;
+}
+
+.pescetarian-card {
+    background-color: #90ee90;
+    border-radius: 1rem;
+    width: 23rem;
+    height: 30rem;
+    margin: 2rem;
+}
+
+.food-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
