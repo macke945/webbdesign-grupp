@@ -1,4 +1,6 @@
-/* global style */
+/* ======================================== */
+/*             global style                 */
+/* ======================================== */
 
 *{
     margin: 0;
@@ -8,20 +10,30 @@
 
 body {
     font-family: "PT Serif", "Mulish", "Helvetica",sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
 }
 
 button {
     border-radius: 25rem;
     color: #000000;
-    padding: .4rem;
+    text-align: center;
     background-color: #ffffff;
-    border-style: none;
     border: 1px solid #ffffff;
-    width: 6rem;
     cursor: pointer;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+button:hover{
+    border: 2px solid #000000;
+    color: #ffffff;
+    background: #002600;
 }
 
-/* NavBar */
+
+/* ======================================== */
+/*                Navbar                    */
+/* ======================================== */
 
 .navbar{
     padding: .9rem;
@@ -29,6 +41,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 5rem;
 }
 .navbar img{
     width: 4rem;
@@ -40,41 +53,48 @@ button {
     list-style-type: none;
     cursor: pointer;
 }
-/* Hero */
+
+/* ======================================== */
+/*                Hero                      */
+/* ======================================== */
+
 .hero {
     position: relative;
-}
-.hero img {
-    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right bottom, rgb(0.75,0.75,0.75, 0.1),rgb(255, 255, 255,0.8)), url(../images/vgmattkassor.jpg);
+    background-size: cover;
     height: 85vh;
-    width: 100%;
 }
-.hero-info{
-    position: absolute;
-    line-height: 2.5rem;
-    color: #ffffff;
-    top: .9rem;
-    left: .9rem;
-    font-size: 1.5rem; 
+
+.hero-info {
+    line-height: 2;
+    margin: 0.9rem 2rem 12rem 2rem;
+    color: #ffffff; 
+    font-size: 350%;
     font-weight: bold;
-    margin: .3rem;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     -webkit-text-stroke: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-@media only screen and (max-width: 48rem){
-    .hero-info {
-        font-size:1rem;
+
+@media only screen and (max-width: 56rem) {
+    .hero-info{
+        font-size: 150%; 
+        color: red;
     } 
 }
 
 .button-hero{
     position: absolute;
+    padding: 1.4rem;
     bottom: 2rem;
-    transform: translateX(50vw);
+    width: 14rem;
 }
 
-/* Footer */
+/* ======================================== */
+/*               Footer                     */
+/* ======================================== */
 
 .footer {
     padding: .9rem;
@@ -83,6 +103,7 @@ button {
     justify-content: space-between;
     background-color: #002600;
     color: #ffffff;
+    height: 7rem;
 }
 .footer .footer-title {
     text-transform: uppercase;
@@ -93,10 +114,16 @@ button {
     display: block;
     word-wrap: break-word;
 }
+.footer-icons{
+    margin-right:2rem;
+}
 
 .footer-icons img {
-    margin: 0.2rem;
+    margin:.5rem;
     width: 2rem;
     height: 2rem;
     cursor: pointer;
+}
+.footer-icons a {
+   text-decoration: none;
 }
