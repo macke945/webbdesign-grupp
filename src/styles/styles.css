@@ -11,6 +11,11 @@
 html {
   width: 100%; 
 }
+
+a {
+	text-decoration: none;
+}
+
 body {
     font-family: "PT Serif", "Mulish", "Helvetica",sans-serif;
     font-weight: 400;
@@ -47,6 +52,8 @@ button:hover{
     align-items: center;
     justify-content: space-between;
     height: 5rem;
+		border-bottom: 1px solid rgb(233, 233, 233);
+		margin-right: 2rem;
 }
 .navbar img {
   width: 4rem;
@@ -73,7 +80,7 @@ button:hover{
     justify-content: center;
     background-image: linear-gradient(to right bottom, rgb(0.75,0.75,0.75, 0.1),rgb(255, 255, 255,0.8)), url(../images/vgmattkassor.jpg);
     background-size: cover;
-    height:55rem;
+    height:43rem;
 }
 .hero-info {
     background: rgba(22, 79, 62, 0.5);
@@ -268,6 +275,7 @@ button:hover{
 .checkout__details--info button {
   width: 10rem;
   padding: 0.4rem;
+  float: right;
 }
 @media only screen and (max-width: 56rem) {
   .checkout {
@@ -317,6 +325,14 @@ h4 {
   border: 2px solid #000000;
   color: #ffffff;
   background: #002600;
+}
+
+/* ======================================== */
+/*               checkout-modal             */
+/* ======================================== */
+.checkout-modal {
+    height: 85vh;
+    background-color:#FBFBFB;
 }
 
 /* ======================================== */
