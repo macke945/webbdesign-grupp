@@ -16,18 +16,26 @@
             <a href="./contact.html"><li>Kontakt</li></a>
         </ul>
     </nav>
-    <main>
+    <main class="contact-main">
         <section class="contact-section">
             <h1>Kontakta oss<h1>
-            <h4>Du kan komma i kontakt genom att fylla i förmulären.</h4>
-        <form class="contact-form" onsubmit="window.alert('Tack. Vi återkommer')"> 
-                <label for="namn">Namn:</label><br>
-                <input id="namn" required type="text" size="40" maxlength="30"><br>
-                <label for="email">Mejladdress:</label><br>
-                <input type="email" required size="40" maxlength="40"><br>
-                <label for="message">Meddelande:</label><br>
-                <textarea rows="6" cols="40" id="message" name="message"></textarea> <br>
-                <input class="contact-form-submit-button" type="submit" value="Skicka"> 
+            <p>Du kan komma i kontakt genom att fylla i förmulären.</p>
+            <form class="contact-form" onsubmit="window.alert('Tack. Vi återkommer')"> 
+                    <div class='field'>
+                        <label for="namn">Namn</label> 
+                        <input id="namn" required type="text">
+                    </div>
+                    <div class='field'>
+                        <label for="email">Mejladdress</label>
+                        <input type="email" required>
+                    </div>
+                        <div class='field'>
+                        <label for="message">Meddelande</label><br>
+                        <textarea rows="6" id="message" name="message"></textarea> 
+                    </div>
+                    <div class='submit'>
+                        <button type='submit' class="contact-form-submit-button">Skicka</button>
+                    </div>                    
             </form>
         </section>
     </main>
