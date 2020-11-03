@@ -3,46 +3,23 @@ var EventHandlers = (function () {
 
    
     function init() {
-
-      
-
         $(".checkout-modal").hide();
-        $(".education").hide();
-        $("#btn-hide-work").hide(); 
-        $("#btn-hide-edu").hide();
-        $(".checkout__details--button").click(onClickCheckoutConfirm);
-        $("#btn-hide-work").click(onClickHideWorkButton);
-        $("#btn-show-edu").click(onClickShowEducationButton);
-        $("#btn-hide-edu").click(onClickHideEducationButton);
- 
+        $("form").submit(onSubmitOrderForm);
+         
+          
+       
     }
 
-      
-
-    function onClickCheckoutConfirm() { 
+    function onClickCheckoutConfirm(e) { 
         $(".checkout__details").hide();
         $(".checkout-modal").show();
-         
+         console.log('test1',e);
     }
-
-    function onClickHideWorkButton() { 
-        $(".work").hide();
-        $("#btn-hide-work").hide();
-        $("#btn-show-work").show();
+     
+    function onSubmitOrderForm() { 
+        $(".checkout-modal").show();
+         console.log('test2');
     }
-
-    function onClickShowEducationButton() { 
-        $(".education").show();
-        $("#btn-show-edu").hide(); 
-        $("#btn-hide-edu").show(); 
-    }
-
-    function onClickHideEducationButton() { 
-        $(".education").hide();
-        $("#btn-hide-edu").hide();
-        $("#btn-show-edu").show();
-    }
-
     return {
         init
     }
