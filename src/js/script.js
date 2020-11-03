@@ -4,7 +4,7 @@ var EventHandlers = (function () {
    
     function init() {
         $(".checkout-modal").hide();
-        $("form").submit(onSubmitOrderForm);
+        $(".checkout__details--button").click(onClickCheckoutConfirm);
          
           
        
@@ -13,13 +13,10 @@ var EventHandlers = (function () {
     function onClickCheckoutConfirm(e) { 
         $(".checkout__details").hide();
         $(".checkout-modal").show();
-         console.log('test1',e);
+          
     }
      
-    function onSubmitOrderForm() { 
-        $(".checkout-modal").show();
-         console.log('test2');
-    }
+   
     return {
         init
     }
