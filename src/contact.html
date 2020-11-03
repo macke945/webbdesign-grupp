@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PTSerif:100,300,400,700,900">
+    <title>Kontakta oss</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../src/index.html">
+            <img src="../src/images/logo.svg" alt="logo">
+        </a>
+        <ul>
+            <li>Kontakt</li>
+        </ul>
+    </nav>
+    <main>
+        <section class="contact-section">
+            <h1>Kontakta oss<h1>
+            <h4>Du kan komma i kontakt genom att fylla i förmulären.</h4>
+        <form class="contact-form" onsubmit="window.alert('Tack. Vi återkommer')"> 
+                <label for="namn">Namn:</label><br>
+                <input id="namn" required type="text" size="40" maxlength="30"><br>
+                <label for="email">Mejladdress:</label><br>
+                <input type="email" required size="40" maxlength="40"><br>
+                <label for="message">Meddelande:</label><br>
+                <textarea rows="6" cols="40" id="message" name="message"></textarea> <br>
+                <input class="contact-form-submit-button" type="submit" value="Skicka"> 
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-title">Matkasse</p>
+        <p class="footer-copyright"> Copyright ©2020 All rights reserved </p>
+        <section class="footer-icons"> 
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../src/images/facebook.svg" alt="facebook-icon">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../src/images/instagram.svg" alt="facebook-icon">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="../src/images/twitter.svg" alt="facebook-icon">
+            </a>
+        </section>
+    </footer>
+</body>
+</html>
