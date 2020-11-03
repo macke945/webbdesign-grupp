@@ -361,9 +361,7 @@ button:hover{
   font-weight: 300;
   color: #fff;
 }
-.field textarea{
-  border: 1px solid rgba(255,255,255,0.5);
-}
+
 .field input {
     height: 40px;
 }

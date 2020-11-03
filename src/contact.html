@@ -20,7 +20,7 @@
         <section class="contact-section">
             <h1>Kontakta oss<h1>
             <p>Du kan komma i kontakt genom att fylla i förmulären.</p>
-            <form class="contact-form" onsubmit="window.alert('Tack. Vi återkommer')"> 
+            <form class="contact-form" onsubmit="window.swal('Tack', 'Vi återkommer','success')"> 
                     <div class='field'>
                         <label for="namn">Namn</label> 
                         <input id="namn" required type="text">
@@ -55,5 +55,6 @@
             </a>
         </section>
     </footer>
+    <script src="../src/js/custom-alert.min.js"></script>
 </body>
 </html>
