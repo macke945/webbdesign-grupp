@@ -10,7 +10,7 @@
 
 html {
   scroll-behavior: smooth;
-  width: 100%; 
+  width: 100%;
 }
 
 a {
@@ -297,11 +297,25 @@ button:hover {
 .checkout__details--info span {
   color: #002600;
 }
-.checkout__details--info button {
+.checkout__details--submit-button {
+  border-radius: 25rem;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid rgb(233, 233, 233);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.4rem;
   width: 10rem;
   padding: 0.4rem;
   float: right;
 }
+
+.checkout__details--submit-button:hover {
+  border-style: none;
+  color: #ffffff;
+  background: #185241;
+}
+
 .checkout-modal {
   width: 50%;
   margin: 0 auto;

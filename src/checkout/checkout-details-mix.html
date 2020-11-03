@@ -26,7 +26,7 @@
             <div class="checkout__details--info">
                <h1>Checkout Matkassa Flex</h1>
                <h4>Fyll i fölande beställuppgifter</h4>
-               <form id="order-form"> 
+               <form> 
                 
                   <label for="namn">Namn:</label><br>
                   <input id="namn" required type="text" size="40" maxlength="30"><br>
@@ -37,7 +37,7 @@
                 <input type="text" required size="40" maxlength="40"><br>
                 <label for="Address">Address:</label><br>
                 <input type="text" required size="40" maxlength="40"><br>
-                <label for="antal">Till hur många personer:</label><br>
+                <label for="antal">Till hur många personer (300 kronor p.p.):</label><br>
                 <select name="antal" id="antal">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -55,12 +55,10 @@
                   </select>
                   <br>
                   
-                  
+                  <input class="checkout__details--submit-button" type="submit" value="Slutför köp">
                 
             </form>
-            <a href="#">
-                <button class="checkout__details--button"> Slutför köp </button>
-            </a>
+            
 
                
                 
