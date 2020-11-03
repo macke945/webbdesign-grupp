@@ -266,7 +266,7 @@ button:hover{
   border: 1px solid #185241;
 }
 /* ======================================== */
-/*              Checkout                    */
+/*              Checkout pages              */
 /* ======================================== */
 .checkout {
   height: auto;
@@ -283,18 +283,28 @@ button:hover{
   height: 25%;
 }
 .checkout__details--info {
-  background-color: #dcdcdc;
+      background-image: linear-gradient(
+        to bottom, 
+        rgba(10,10,10,0.1) 0%,
+        rgba(10,10,10,0.2) 60%,
+        rgba(10,10,10,0.8) 100%);
   width: calc(100vw - 4rem);
   margin: 2rem;
   padding: 2rem;
   bottom: 2rem;
 }
+.checkout__details--info h1{
+  font-size: 2rem;
+}
+.checkout__details--info p{
+  margin-bottom: 2rem;
+}
 .checkout__details--info span {
   color: #002600;
 }
 .checkout__details--info button {
-  width: 10rem;
-  padding: 0.4rem;
+  width: 12rem;
+  padding: 0.5rem;
   float: right;
 }
 @media only screen and (max-width: 56rem) {
@@ -313,6 +323,44 @@ button:hover{
     line-height: 3;
     height: auto;
   }
+}
+
+.checkout-field{
+    margin-bottom: 20px;
+}
+
+.checkout-field input{
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255,255,255,0.5);
+  transition: all 0.3s ease 0s;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color:  rgba(0,0,0);
+}
+.checkout-field label {
+    line-height: 1.2;
+    font-weight: 700;
+    color: rgba(0,0,0);
+    transition: all 0.3s ease 0s;
+    font-size: 1.2rem;
+}
+.checkout-field #betalmetod,
+.checkout-field #antal {
+  margin-left: 1rem;
+  padding: 0 .5rem;
+  text-transform: uppercase;
+  border: 2px solid rgba(255,255,255,0.5);
+}
+/* ======================================== */
+/*               checkout-modal             */
+/* ======================================== */
+.checkout-modal {
+    height: 55rem;
+    background-color:#FBFBFB;
 }
 /* ======================================== */
 /*               Contact page               */
@@ -342,11 +390,12 @@ button:hover{
 .contact-section p {
   color: #fff;
   text-align: center;
-  margin: 2rem 1rem;
+  margin: 1rem auto;
 }
 
 .field {
-    margin-bottom: 50px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .field input, .field textarea {
@@ -425,13 +474,7 @@ button:hover{
         grid-row-start: 2;
     }
 }
-/* ======================================== */
-/*               checkout-modal             */
-/* ======================================== */
-.checkout-modal {
-    height: 55rem;
-    background-color:#FBFBFB;
-}
+
 
 /* ======================================== */
 /*               Footer                     */
