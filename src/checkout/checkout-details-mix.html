@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PTSerif">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
     <title>Checkout| Mix</title>
 </head>
 <body>
@@ -22,12 +22,46 @@
             <img src="../images/mix.jpg" alt="tallrik med kött och grönsaker" class="checkout__details--image">
              
             <div class="checkout__details--info">
+               <h1>Checkout Matkassa Flex</h1>
+               <h4>Fyll i fölande beställuppgifter</h4>
+               <form id="order-form"> 
+                
+                  <label for="namn">Namn:</label><br>
+                  <input id="namn" required type="text" size="40" maxlength="30"><br>
+                  <label for="email">Mejladdress:</label><br>
+                <input type="email" required size="40" maxlength="40"><br>
+                
+                <label for="Postnummer">Postnummer:</label><br>
+                <input type="text" required size="40" maxlength="40"><br>
+                <label for="Address">Address:</label><br>
+                <input type="text" required size="40" maxlength="40"><br>
+                <label for="antal">Till hur många personer:</label><br>
+                <select name="antal" id="antal">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select><br>
+                <label for="betalmetod">Din betalmetod:</label><br>
+                <select name="betalmetod" id="betalmetod">
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Swish">Swish</option>
+                    <option value="Bankkonto">Bankkonto</option>
+                    <option value="Klarna">Klarna</option>
+                  </select>
+                  <br>
+                  
+                    <input type="submit" class="checkout__details--button" value="Bekräfta">
+                
+            </form>
+
                
-                <p class="checkout__details--image--text">Du har köpt:<span> ........</span></p>
-                <p class="checkout__details--image--kostnad">Kostnad:<span> 285 Kr</span></p>
-                <a href="#">
-                    <button class="checkout__details--button"> Betala </button>
-                </a>
+                
+                
+                 
+             
             </div>
         </section>
                      <div class="checkout-modal">
