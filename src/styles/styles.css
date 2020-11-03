@@ -83,8 +83,7 @@ button:hover {
       to right bottom,
       rgb(0.75, 0.75, 0.75, 0.1),
       rgb(255, 255, 255, 0.8)
-    ),
-    url(../images/vgmattkassor.jpg);
+    ),url(../images/vgmattkassor.jpg);
   background-size: cover;
   height: 43rem;
 }
@@ -348,7 +347,7 @@ button:hover {
 }
 
 .checkout-field{
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .checkout-field input{
@@ -362,6 +361,7 @@ button:hover {
   line-height: 24px;
   font-weight: 300;
   color:  rgba(0,0,0);
+  margin-bottom: 2rem;
 }
 .checkout-field label {
     line-height: 1.2;
@@ -381,8 +381,13 @@ button:hover {
 /*               checkout-modal             */
 /* ======================================== */
 .checkout-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     height: 55rem;
     background-color:#FBFBFB;
+    width: 80%;
 }
 /* ======================================== */
 /*               Contact page               */
