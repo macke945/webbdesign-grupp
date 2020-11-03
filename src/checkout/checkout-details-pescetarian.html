@@ -20,15 +20,59 @@
     </nav>
     <main class="checkout">
         <section class="checkout__details">
-            <img src="../images/pescetarian.jpg" alt="tallrik med kött och grönsaker" class="checkout__details--image">
+            <img src="../images/pescetarian.jpg" alt="tallrik lax och grönsaker" class="checkout__details--image">
             <div class="checkout__details--info">
-                <p class="checkout__details--image--text">Du har köpt:<span> ........</span></p>
-                <p class="checkout__details--image--kostnad">Kostnad:<span> 395 Kr</span></p>
-                <a href="#">
-                    <button class="checkout__details--button">  Slutför köp  </button>
-                </a>
-            </div>
+                <h1>Checkout Matkassa Pescetarian</h1>
+                <h4>Fyll i fölande beställuppgifter</h4>
+                <form id="order-form"> 
+                 
+                   <label for="namn">Namn:</label><br>
+                   <input id="namn" required type="text" size="40" maxlength="30"><br>
+                   <label for="email">Mejladdress:</label><br>
+                 <input type="email" required size="40" maxlength="40"><br>
+                 
+                 <label for="Postnummer">Postnummer:</label><br>
+                 <input type="text" required size="40" maxlength="40"><br>
+                 <label for="Address">Address:</label><br>
+                 <input type="text" required size="40" maxlength="40"><br>
+                 <label for="antal">Till hur många personer:</label><br>
+                 <select name="antal" id="antal">
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+                   </select><br>
+                 <label for="betalmetod">Din betalmetod:</label><br>
+                 <select name="betalmetod" id="betalmetod">
+                     <option value="MasterCard">MasterCard</option>
+                     <option value="Visa">Visa</option>
+                     <option value="Swish">Swish</option>
+                     <option value="Bankkonto">Bankkonto</option>
+                     <option value="Klarna">Klarna</option>
+                   </select>
+                   <br>
+                   
+                   
+                 
+             </form>
+             <a href="#">
+                 <button class="checkout__details--button"> Slutför köp </button>
+             </a>
+ 
+                
+                 
+                 
+                  
+              
+             </div>
         </section>
+        <div class="checkout-modal">
+            <h2>Tack för din betalning. Din matkassa levereras imorgon mellan klockan 8 och 11</h2>
+            <a href="../index.html">
+            <button class="checkout-modal-button"> Tillbaka hemsidan </button>  
+           </a>
+        </div>
     </main>
     
     <footer class="footer">
@@ -46,6 +90,9 @@
             </a>
         </section>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+
 </body>
 
 </html>
