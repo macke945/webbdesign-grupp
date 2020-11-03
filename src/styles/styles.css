@@ -317,17 +317,87 @@ button:hover{
 /* ======================================== */
 /*               Contact page               */
 /* ======================================== */
-.contact-section {
-  height: 45rem;
+
+.contact-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 55rem;
   margin: 2rem 1rem;
+
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(10,10,10,0.5) 0%,
+        rgba(10,10,10,0.6) 60%,
+        rgba(10,10,10,0.9) 100%),url('../images/vgmattkassor.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-section {
+  border-radius: 9px;
 }
 .contact-section h1,
-h4 {
-  margin: 1rem 0rem;
+.contact-section p {
+  color: #fff;
+  text-align: center;
+  margin: 2rem 1rem;
 }
+
+.field {
+    margin-bottom: 50px;
+}
+
+.field input, .field textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  transition: all 0.3s ease 0s;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #fff;
+}
+.field textarea{
+  border: 1px solid rgba(255,255,255,0.5);
+}
+.field input {
+    height: 40px;
+}
+
+.field label {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.field input:focus, .field textarea:focus {
+    border-bottom: 1px solid #F06666;
+}
+
+.submit {
+    text-align: center;
+    padding: 0;
+    margin: 30px 0;
+}
+
+
 .contact-form {
-  width: auto;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
 }
+
 .contact-form label {
   margin: 0.8rem 0;
 }
@@ -336,7 +406,7 @@ h4 {
   border-radius: 25rem;
   text-align: center;
   background-color: #ffffff;
-  border: 1px solid #000000;
+  border-style: none;
   cursor: pointer;
   font-weight: 700;
   font-size: 1.4rem;
@@ -347,9 +417,16 @@ h4 {
 .contact-form-submit-button:hover {
   border: 2px solid #000000;
   color: #ffffff;
-  background: #002600;
+  background: #185241;
 }
 
+@media screen and (max-width: 800px) {
+    .contact__form {
+        grid-column-start: 1;
+        grid-column-end: span 6;
+        grid-row-start: 2;
+    }
+}
 /* ======================================== */
 /*               checkout-modal             */
 /* ======================================== */
