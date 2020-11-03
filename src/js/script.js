@@ -3,18 +3,18 @@ var EventHandlers = (function () {
 
    
     function init() {
+        // we can take away this
         $(".checkout-modal").hide();
-        $(".checkout__details--button").click(onClickCheckoutConfirm);
-         
-          
+    
+        $("form").submit(function(e) {
+            alert('Tack för din beställing. Här låtsas vi att det pågår en redirekt till valde betaltjänst. Klicka på ok för att låtsas att allt har gått korrekt');
+            window.location.href ="./thanks.html"
+            return false;
+        });
+        
        
     }
-
-    function onClickCheckoutConfirm(e) { 
-        $(".checkout__details").hide();
-        $(".checkout-modal").show();
-          
-    }
+ 
      
    
     return {

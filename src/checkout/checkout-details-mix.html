@@ -23,58 +23,47 @@
         <section class="checkout__details">
             <img src="../images/mix.jpg" alt="tallrik med kött och grönsaker" class="checkout__details--image">
             <div class="checkout__details--info">
-                <h1>Checkout Matkassa Flex</h1>
-                <p>Fyll i fölande beställuppgifter</p>
-                <form id="order-form" > 
-                    <div class='checkout-field'>
-                        <label for="namn">Namn:</label>
-                        <input id="namn" required type="text" size="40" maxlength="30">
-                    </div>
-                    <div class='checkout-field'>
-                        <label for="email">Mejladdress:</label>
-                        <input type="email" required size="40" maxlength="40">
-                    </div>
-                    <div class='checkout-field'>           
-                        <label for="Postnummer">Postnummer:</label>
-                        <input type="text" required size="40" maxlength="40">
-                    </div>
-                    <div class='checkout-field'>           
-                        <label for="Address">Address:</label>
-                        <input type="text" required size="40" maxlength="40">
-                    </div>
-                        <div class='checkout-field'>           
-                        <label for="kostnad">Kostnad:<span> 165 Kr</span></label> 
-                    </div>
-                    <div class='checkout-field'>           
-                        <label for="antal">Till hur många personer</label>
-                        <select name="antal" id="antal">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    </div>
-                    <div class='checkout-field'>           
-                        <label for="betalmetod">Din betalmetod</label> 
-                        <select name="betalmetod" id="betalmetod">
-                            <option value="MasterCard"> MasterCard</option>
-                            <option value="Visa"> Visa</option>
-                            <option value="Swish"> Swish</option>
-                            <option value="Bankkonto"> Bankkonto</option>
-                            <option value="Klarna"> Klarna</option>
-                        </select>
-                    </div>
-                    <div class='submit'>
-                        <button class="checkout__details--button" type='submit'> Slutför köp </button>
-                    </div> 
-                </form>
+               <h1>Checkout Matkassa Flex</h1>
+               <h4>Fyll i fölande beställuppgifter</h4>
+               <form> 
+                
+                  <label for="namn">Namn:</label><br>
+                  <input id="namn" required type="text" size="40" maxlength="30"><br>
+                  <label for="email">Mejladdress:</label><br>
+                <input type="email" required size="40" maxlength="40"><br>
+                
+                <label for="Postnummer">Postnummer:</label><br>
+                <input type="text" required size="40" maxlength="40"><br>
+                <label for="Address">Address:</label><br>
+                <input type="text" required size="40" maxlength="40"><br>
+                <label for="antal">Till hur många personer (300 kronor p.p.):</label><br>
+                <select name="antal" id="antal">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select><br>
+                <label for="betalmetod">Din betalmetod:</label><br>
+                <select name="betalmetod" id="betalmetod">
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Swish">Swish</option>
+                    <option value="Bankkonto">Bankkonto</option>
+                    <option value="Klarna">Klarna</option>
+                  </select>
+                  <br>
+                  
+                  <input class="checkout__details--submit-button" type="submit" value="Slutför köp">
+                
+            </form>
             </div>
         </section>
-        <div class="checkout-modal">
-            <p>
-                modal.... Här en ruta som säger du har betallt och bestältt ... och knapp för att gå till hem.. Sätt till en viss View height...
-            </p> 
+            <div class="checkout-modal">
+            <h2>Tack för din betalning. Din matkassa levereras imorgon mellan klockan 8 och 11</h2>
+            <a href="../index.html">
+                <button class="checkout-modal-button"> Tillbaka hemsidan </button>  
+            </a>
         </div>
     </main>
     
